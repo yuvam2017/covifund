@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link rel="stylesheet" href="./asssets/css/singin.css">
+      <title>CoviFund</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+      <div class="header">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">CoviFund</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="aboutus.html">About US</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Help Someone
+                                          </a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="index.html#section1">Make Payment</a></li>
+                                                <li><a class="dropdown-item" href="askforpayment.html">Ask Help</a></li>
+
+
+                                          </ul>
+                                    </li>
+
+                              </ul>
+                              <!-- <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                          aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search Payments</button>
+                              </form> -->
+                        </div>
+                  </div>
+            </nav>
+      </div>
+
+      <div class="container-fluid my-2 w-75  form-cont text-center">
+
+            <h1 class="text-center">Sign Up</h1>
+
+            <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row mb-4">
+                        <div class="col">
+                              <div class="form-outline">
+                                    <label class="form-label" for="form3Example1">First name</label>
+                                    <input type="text" id="firstname" class="form-control" required />
+                              </div>
+                        </div>
+                        <div class="col">
+                              <div class="form-outline">
+                                    <label class="form-label" for="form3Example2">Last name</label>
+                                    <input type="text" id="lastname" class="form-control" required />
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="text-center">
+                        <p style="color: red;">Verify yourself using any one of the method given below :</p>
+                  </div>
+
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Email address</label>
+                        <input type="email" id="email" class="form-control" />
+                  </div>
+
+                  <!-- Mobile input -->
+                  <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Mobile Number</label>
+                        <input type="number" id="mobile" class="form-control" />
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4">Password</label>
+                        <input type="password" id="password" class="form-control" required />
+                  </div>
+
+                  <!-- Submit button -->
+                  <button onclick="signup()" id="submitBtn" type="button" class="btn btn-primary btn-block w-75 text-center mb-4">Sign
+                        up</button>
+
+                  <div class="text-center">
+                        <a href="login.html">Already Have an Account!!</a>
+                  </div>
+                  <!-- Register buttons -->
+                  <div class="text-center">
+                        <p>or sign up with:</p>
+                        <button onclick="signupViaFacebook()" type="button" class="btn btn-primary btn-floating mx-1">
+                              <i class="bi bi-facebook"></i>
+                        </button>
+
+                        <button onclick="signupViaGoogle()" type="button" class="btn btn-primary btn-floating mx-1">
+                              <i class="bi bi-google"></i>
+                        </button>
+
+                        <button onclick="signupViaTwitter()" type="button" class="btn btn-primary btn-floating mx-1">
+                              <i class="bi bi-twitter"></i>
+                        </button>
+
+
+                  </div>
+            </form>
+      </div>
+
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+            crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+-->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+
+      <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                  apiKey: "AIzaSyCHxaFzSBtOgJn9DVUtGeX_jwSFJB6fCAg",
+                  authDomain: "covifund-3df4d.firebaseapp.com",
+                  projectId: "covifund-3df4d",
+                  storageBucket: "covifund-3df4d.appspot.com",
+                  messagingSenderId: "660226306309",
+                  appId: "1:660226306309:web:824c838eb591dde622076c",
+                  measurementId: "G-3SC8G2LRW2"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const db = firebase.firestore();
+
+      </script>
+      <script src="./asssets/js/signin.js"></script>
+
+</body>
+
+</html>
