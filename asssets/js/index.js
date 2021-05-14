@@ -106,17 +106,17 @@ function getData() {
                         <button onclick="copyText(document.getElementById('user-account-number'))"
                               class="btn my-1 btn-info">
                               Account Number : <span id="user-account-number"
-                                    class="user-account-number">11167982927</span>
+                                    class="user-account-number">ACCOUNTNUMBER</span>
                         </button>
                         <button onclick="copyText(document.getElementById('user-ifsc-code-number'))"
                               class="btn my-1 btn-warning">
                               IFSC CODE : <span class="user-ifsc-code-number"
-                                    id="user-ifsc-code-number">SBIN0000017</span>
+                                    id="user-ifsc-code-number">IFSCCODE</span>
                         </button>
 
                         <button onclick="copyText(document.getElementById('user-upi-id'))"
                               class="my-2 btn btn-secondary">
-                              UPI ID: <span class="user-upi-id" id="user-upi-id">7270034045@paytm</span>
+                              UPI ID: <span class="user-upi-id" id="user-upi-id">UPIID@PAYTM OR YBL</span>
                         </button>
                         <button onclick="document.getElementById('medicalProof').style.display = 'block'"
                               class="btn my-2 btn-primary">Medical Proofs
