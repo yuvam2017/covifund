@@ -47,11 +47,7 @@
                                     </li>
 
                               </ul>
-                              <!-- <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                          aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search Payments</button>
-                              </form> -->
+                              
                         </div>
                   </div>
             </nav>
@@ -96,131 +92,32 @@
       </div>
 
 
-      <!-- <div id="section1" class="help-container my-5 container-fluid">
-            <div style="border: 0.02rem solid #ebebeb;" class="row">
-                  <div class="col image-column">
-                        <img src="./asssets/images/487cef81ea708e992966ce3f9b550e4b.jpg" alt="UPI Code">
-                  </div>
-                  <div class="col-6 text-column">
-                        <div class="row">
-                              <div class="col">
-                                    <h4>For whats</h4>
-                                    <h6>Click on any details to copy it</h6>
-                              </div>
-                        </div>
-                        <div class="row d-flex container-fluid">
-                              <div class="col">
-                                    <button onclick="copyText(document.getElementById('user-account-number'))"
-                                          class="btn my-1 btn-info">
-                                          Account Number : <span id="user-account-number"
-                                                class="user-account-number">11167982927</span>
-                                    </button>
-                                    <button onclick="copyText(document.getElementById('user-ifsc-code-number'))"
-                                          class="btn my-1 btn-warning">
-                                          IFSC CODE : <span class="user-ifsc-code-number"
-                                                id="user-ifsc-code-number">SBIN0000017</span>
-                                    </button>
-
-                                    <button onclick="copyText(document.getElementById('user-upi-id'))"
-                                          class="my-2 btn btn-secondary">
-                                          UPI ID: <span class="user-upi-id" id="user-upi-id">7270034045@paytm</span>
-                                    </button>
-                                    <button onclick="document.getElementById('medicalProof').style.display = 'block'"
-                                          class="btn my-2 btn-primary">Medical Proofs
-                                    </button>
-
-
-                              </div>
-                        </div>
-                        <div class="w-100 row">
-                              <div class="col">
-                                    <div class="accordion" id="accordionExample">
-                                          <div class="accordion-item">
-                                                <h2 class="accordion-header" id="headingTwo">
-                                                      <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                            aria-expanded="false" aria-controls="collapseOne">
-                                                            More About Me..
-                                                      </button>
-                                                </h2>
-                                                <div id="collapseOne" class="accordion-collapse collapse"
-                                                      aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                      <div class="accordion-body">
-                                                            <strong>This is the first item's accordion body.</strong> It is shown by
-                                                            default, until the collapse plugin adds the appropriate classes that we
-                                                            use to style each element. These classes control the overall appearance,
-                                                            as well as the showing and hiding via CSS transitions. You can modify
-                                                            any of this with custom CSS or overriding our default variables. It's
-                                                            also worth noting that just about any HTML can go within the
-                                                            <code>.accordion-body</code>, though the transition does limit overflow.
-                                                      </div>
-                                                </div>
-                                          </div>
-            
-            
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  
-            </div>
-      </div>
-
-
-
-      <div id="medicalProof" class="image-medical-proof">
-            <div class="proof-image">
-                  <img src="./asssets/images/cypher2.jpg" alt="Medical Proof">
-
-            </div>
-
-            <div class="close">
-                  <button onclick="document.getElementById('medicalProof').style.display = 'none'" class="btn closebtn">
-                        <i class="bi bi-x-lg"></i>
-                  </button>
-            </div>
-
-      </div> -->
-
-
-
-
-      <!-- Optional JavaScript; choose one of the two! -->
-
-      <!-- Option 1: Bootstrap Bundle with Popper -->
+      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
             crossorigin="anonymous"></script>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-    -->
-
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
+     
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 
 
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
 
       <script>
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            
             var firebaseConfig = {
-                  apiKey: "AIzaSyCHxaFzSBtOgJn9DVUtGeX_jwSFJB6fCAg",
-                  authDomain: "covifund-3df4d.firebaseapp.com",
-                  projectId: "covifund-3df4d",
-                  storageBucket: "covifund-3df4d.appspot.com",
-                  messagingSenderId: "660226306309",
-                  appId: "1:660226306309:web:824c838eb591dde622076c",
-                  measurementId: "G-3SC8G2LRW2"
+                  apiKey: "YOURAPIKEY",
+                  authDomain: "projectId.firebaseapp.com",
+                  projectId: "Your ProjectID",
+                  storageBucket: "projectID.appspot.com",
+                  messagingSenderId: "YOURID",
+                  appId: "YOURAPPID",
+                  measurementId: "MEASUREMENTID"
             };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
